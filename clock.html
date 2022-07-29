@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./( 5 ) BLOG.JS"></script> -->
+    <script>
+        var date = new Date();
+
+
+
+
+setInterval(currenttime,1000);
+function currenttime(){
+    const b = new Date();
+    document.getElementById("current-time").innerHTML = b.toLocaleTimeString();
+}
+
+
+    </script>
+
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        background: black;
+        color: white;
+      }
+      
+      .container,
+      .new {
+        font-size: 1.5rem;
+        /* background: wheat; */
+        color: black;
+        padding: 10rem auto;
+        margin: 10rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .cu ,.day ,.month ,.year {
+        display: flex;
+        height: 70px;
+        width: 150px;
+        background: white;
+        color: black;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+      
+      #current-time {
+        display: flex;
+        height: 70px;
+        width: 150px;
+        background: white;
+        color: black;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+      </style>
+</head>
+<body>
+
+
+     <div class="container">
+      <span class="cu">Current Time</span> &nbsp;  &nbsp;  &nbsp;<span id="current-time"> </span>
+     </div>
+
+
+    
+</body>
+</html>
